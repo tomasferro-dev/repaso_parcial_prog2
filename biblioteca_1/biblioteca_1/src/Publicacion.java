@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public abstract class Publicacion {
     private String titulo;
@@ -23,6 +24,12 @@ public abstract class Publicacion {
 
     public void addEjemplar(Ejemplar ejemplar){
         this.ejemplares.add(ejemplar);
+    }
+
+    public List<Ejemplar> getEjemplaresDisponibles() {
+        return this.ejemplares.stream()
+                .filter(e -> EstadoEjemplar.DISPONIBLE.equals(e.getEstado()))
+                .collect(Collectors.toList());
     }
 
     public String getInfo() {

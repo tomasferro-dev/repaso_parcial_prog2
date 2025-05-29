@@ -23,7 +23,7 @@ public class LineaPrestamo {
         return getFechaDevolucionReal;
     }
 
-    public void setGetFechaDevolucionReal(LocalDate getFechaDevolucionReal) {
+    public void setFechaDevolucionReal(LocalDate getFechaDevolucionReal) {
         this.getFechaDevolucionReal = getFechaDevolucionReal;
     }
 

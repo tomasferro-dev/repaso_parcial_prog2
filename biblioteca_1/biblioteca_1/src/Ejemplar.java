@@ -32,6 +32,14 @@ public class Ejemplar {
         this.publicacion = publicacion;
     }
 
+    public boolean estaDisponible () {
+        if (this.getEstado().equals(EstadoEjemplar.DISPONIBLE)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     @Override
     public String toString() {
         return "Ejemplar{" +

@@ -34,6 +34,17 @@ public class Prestamo {
         ejemplar.setEstado(EstadoEjemplar.PRESTADO);
     }
 
+    public void devolverEjemplar (Ejemplar ejemplar) {
+        for (LineaPrestamo lp : lineaPrestamos) {
+            if (lp.getEjemplar().equals(ejemplar)) {
+                lp.setFechaDevolucionReal(LocalDate.now());
+                break;
+            }
+        }
+        ejemplar.setEstado(EstadoEjemplar.DISPONIBLE);
+
+    }
+
 
     @Override
     public String toString() {
