@@ -6,15 +6,10 @@ public class Libro extends Publicacion{
     private Editorial editorial;
     private List<Autor> autores = new ArrayList<>();
 
-    public Libro(String titulo, int anio, Genero genero) {
-        super(titulo, anio, genero);
-    }
 
     public Libro(String titulo, int anio, Genero genero, String isbn) {
         super(titulo, anio, genero);
         this.isbn = isbn;
-        this.editorial = editorial;
-        this.autores = autores;
     }
 
     public String getIsbn() {

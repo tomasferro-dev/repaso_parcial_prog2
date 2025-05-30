@@ -36,7 +36,7 @@ public class Alumno extends Usuario{
 
     @Override
     public String toString() {
-        return "Alumno{" +
+        return "Alumno{" +super.toString()  +
                 "legajo='" + legajo + '\'' +
                 ", nivel='" + nivel + '\'' +
                 ", categoriaAlumno=" + categoriaAlumno +

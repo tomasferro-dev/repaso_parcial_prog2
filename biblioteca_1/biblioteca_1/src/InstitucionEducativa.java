@@ -2,6 +2,10 @@ public class InstitucionEducativa {
     private String nombre;
     private String tipo;
 
+    public InstitucionEducativa(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNombre() {
         return nombre;
     }

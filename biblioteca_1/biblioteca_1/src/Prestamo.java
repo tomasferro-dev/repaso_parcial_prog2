@@ -7,9 +7,8 @@ public class Prestamo {
     private LocalDate fechaDevolucion;
     private List<LineaPrestamo> lineaPrestamos = new ArrayList<>();
 
-    public Prestamo(LocalDate fechaPrestamo, LocalDate fechaDevolucion) {
+    public Prestamo(LocalDate fechaPrestamo) {
         this.fechaPrestamo = fechaPrestamo;
-        this.fechaDevolucion = fechaDevolucion;
     }
 
     public LocalDate getFechaPrestamo() {
